@@ -10,7 +10,7 @@ fi
 if [ ! -d $Folder  ];
 then
         echo "Cloning repository..."
-        git clone https://github.com/mediascape/WP5/tree/master/Tests/NEC_adaptation_engine/hybrid-adaptation-engine
+        git clone https://github.com/mediascape/adaptation-engine
 else
         echo "Checking for updates..."
         cd $Folder
