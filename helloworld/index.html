@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">  
+	
+    <title>Hello World</title>
+
+    <!-- web components -->	
+	<script src="/bower_components/webcomponentsjs/webcomponents.js"></script>
+	<link rel="import" href="/bower_components/google-chart/google-chart.html">
+	<link rel="import" href="/bower_components/google-map/google-map.html">
+	<link rel="import" href="/bower_components/google-streetview-pano/google-streetview-pano.html">  
+        
+    <!-- bootstrap -->	        
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">        
+        
+    <script data-main="js/mediascape/mediascape" src="js/lib/require.js"></script>
+    <script src="js/app.js"></script>
+	
+<style>
+
+google-map {
+    height: 300px;
+}
+  
+google-streetview-pano {
+    height: 300px;
+}
+  
+
+  
+</style>
+	
+</head>
+
+<body>
+
+<google-streetview-pano  id="view"
+  pano-id="CWskcsTEZBNXaD8gG-zATA"
+  heading="330"
+  pitch="-2"
+  zoom="0.8"
+  disable-default-ui>
+</google-streetview-pano>  
+
+<google-map id="map" latitude="37.77493" longitude="-122.41942"></google-map>
+
+<google-chart  id="chart"
+	id='resizing_chart'
+    type='column'
+    options='{"title": "Responsive chart",
+              "vAxis": {"minValue" : 0, "maxValue": 10}}'
+    cols='[{"label": "Data", "type": "string"},{"label": "Value", "type": "number"}]'
+    rows='[["Col1", 5.0],["Col2", 5.0],["Col3", 5.0]]'>
+</google-chart>
+
+
+</body>
+
+</html>

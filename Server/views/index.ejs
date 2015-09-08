@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    <title>Index</title>
+</head>
+
+<body>
+    <% if (!user) { %>
+        <h2>Welcome! Please log in.</h2>
+        <a href="/auth/google">Login with Google</a>
+
+        <% } else { %>
+            <h2>Hello, <%= user.displayName %>.</h2>
+            <a href="/info">Check your User Info</a>
+            <br>
+            <a href="/example.html">Go to the Demo</a>
+            <br>
+            <a href="/logout">Logout</a>
+            <% } %>
+</body>
+
+</html>

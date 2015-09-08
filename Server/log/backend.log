@@ -1,0 +1,34 @@
+[2015-08-19 15:44:50.156] [DEBUG] SocketServer - somebody want to join d21bc9208ca06b453a62 with { agentID: '533366989', userId: 'test' }
+[2015-08-19 15:44:50.161] [INFO] SocketServer - path d21bc9208ca06b453a62 data { agentID: '533366989', userId: 'test' } allowed true isGroup undefined
+[2015-08-19 15:45:33.486] [INFO] SocketServer - User accepted without authentication User not authorized through passport. (User Property not found)
+[2015-08-19 15:45:33.781] [INFO] SocketServer - User accepted without authentication User not authorized through passport. (User Property not found)
+[2015-08-19 15:45:33.825] [DEBUG] SocketServer - somebody want to join d21bc9208ca06b453a62 with { agentID: '423740123', userId: 'test' }
+[2015-08-19 15:45:33.829] [INFO] SocketServer - path d21bc9208ca06b453a62 data { agentID: '423740123', userId: 'test' } allowed true isGroup undefined
+[2015-08-19 15:50:20.540] [INFO] SocketServer - User accepted without authentication User not authorized through passport. (User Property not found)
+[2015-08-19 15:50:25.041] [INFO] SocketServer - User accepted without authentication User not authorized through passport. (User Property not found)
+[2015-08-19 15:50:25.333] [INFO] SocketServer - User accepted without authentication User not authorized through passport. (User Property not found)
+[2015-08-19 15:50:25.423] [DEBUG] SocketServer - somebody want to join d21bc9208ca06b453a62 with { agentID: '769295085', userId: 'test' }
+[2015-08-19 15:50:25.430] [INFO] SocketServer - path d21bc9208ca06b453a62 data { agentID: '769295085', userId: 'test' } allowed true isGroup undefined
+[2015-08-19 15:50:42.685] [INFO] SocketServer - User accepted without authentication User not authorized through passport. (User Property not found)
+[2015-08-19 15:50:42.935] [INFO] SocketServer - User accepted without authentication User not authorized through passport. (User Property not found)
+[2015-08-19 15:50:43.056] [DEBUG] SocketServer - somebody want to join d21bc9208ca06b453a62 with { agentID: '928398130', userId: 'test' }
+[2015-08-19 15:50:43.069] [INFO] SocketServer - path d21bc9208ca06b453a62 data { agentID: '928398130', userId: 'test' } allowed true isGroup undefined
+[2015-08-19 15:56:52.579] [INFO] SocketServer - User accepted without authentication User not authorized through passport. (User Property not found)
+[2015-08-19 15:57:06.482] [INFO] SocketServer - User accepted without authentication User not authorized through passport. (User Property not found)
+[2015-08-19 15:59:24.690] [INFO] SocketServer - User accepted without authentication User not authorized through passport. (User Property not found)
+[2015-08-19 15:59:24.919] [INFO] SocketServer - User accepted without authentication User not authorized through passport. (User Property not found)
+[2015-08-19 15:59:24.993] [DEBUG] SocketServer - somebody want to join d21bc9208ca06b453a62 with { agentID: '340751432', userId: 'test' }
+[2015-08-19 15:59:24.996] [INFO] SocketServer - path d21bc9208ca06b453a62 data { agentID: '340751432', userId: 'test' } allowed true isGroup undefined
+[2015-08-19 15:59:27.329] [INFO] SocketServer - User accepted without authentication User not authorized through passport. (User Property not found)
+[2015-08-19 15:59:27.619] [INFO] SocketServer - User accepted without authentication User not authorized through passport. (User Property not found)
+[2015-08-19 15:59:27.669] [DEBUG] SocketServer - somebody want to join d21bc9208ca06b453a62 with { agentID: '426777653', userId: 'test' }
+[2015-08-19 15:59:27.674] [INFO] SocketServer - path d21bc9208ca06b453a62 data { agentID: '426777653', userId: 'test' } allowed true isGroup undefined
+[2015-08-19 16:06:35.130] [INFO] SocketServer - User accepted without authentication User not authorized through passport. (User Property not found)
+[2015-08-19 16:06:35.444] [INFO] SocketServer - User accepted without authentication User not authorized through passport. (User Property not found)
+[2015-08-19 16:06:35.563] [DEBUG] SocketServer - somebody want to join d21bc9208ca06b453a62 with { agentID: '74914878', userId: 'test' }
+[2015-08-19 16:06:35.566] [INFO] SocketServer - path d21bc9208ca06b453a62 data { agentID: '74914878', userId: 'test' } allowed true isGroup undefined
+[2015-08-19 16:07:24.200] [INFO] SocketServer - User accepted without authentication User not authorized through passport. (User Property not found)
+[2015-08-19 16:07:24.579] [INFO] SocketServer - User accepted without authentication User not authorized through passport. (User Property not found)
+[2015-08-19 16:07:24.762] [DEBUG] SocketServer - somebody want to join d21bc9208ca06b453a62 with { agentID: '762547800', userId: 'test' }
+[2015-08-19 16:07:24.765] [INFO] SocketServer - path d21bc9208ca06b453a62 data { agentID: '762547800', userId: 'test' } allowed true isGroup undefined
+[2015-08-19 16:20:02.427] [INFO] MediaScape - Got a SIGINIT - terminating

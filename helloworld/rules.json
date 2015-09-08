@@ -1,0 +1,223 @@
+{
+    "name": "FileName: Multi-device adaptation behaviour descriptor for the multi-device adaptation engine",
+    "explicitRules": {
+        "name": "explicit",
+        "enabled": true,		
+        "priority": 2,
+        "capabilities": ["deviceType"],
+        "behaviour": {
+            "agents": {
+                "agent1": {
+                    "deviceType": "computer"
+                },
+                "agent2": {
+                    "deviceType": "tablet"
+                },
+                "agent3": {
+                    "deviceType": "mobile"
+                },
+                "agent4": {
+                    "deviceType": "tv"
+                }                                
+            },
+            "rules": [
+                {
+                    "conditions": {
+                        "exists": [
+                            "agent1"
+                        ]
+                    },
+                    "actions": {
+                        "agent1": {
+                            "chart": {
+                                "load": true
+                            },
+                            "view": {
+                                "load": false,
+                                "volume": 1
+                            },
+                            "map": {
+                                "load": false
+                            }
+                        }
+                    }
+                },
+                {
+                    "conditions": {
+                        "exists": [
+                            "agent2"
+                        ]
+                    },
+                    "actions": {
+                        "agent2": {
+                            "chart": {
+                                "load": false
+                            },
+                            "view": {
+                                "load": true,
+                                "volume": 1
+                            },
+                            "map": {
+                                "load": false
+                            }
+                        }
+                    }
+                },                
+                {
+                    "conditions": {
+                        "exists": [
+                            "agent1",
+                            "agent2"
+                        ]
+                    },
+                    "actions": {
+                        "agent1": {
+                            "chart": {
+                                "load": false
+                            },
+                            "view": {
+                                "load": false,
+                                "volume": 1
+                            },
+                            "map": {
+                                "load": true
+                            }
+                        },
+                        "agent2":{
+                            "chart": {
+                                "load": true
+                            },
+                            "view": {
+                                "load": false
+                            },
+                            "map": {
+                                "load": true
+                            }
+                        }
+                    }
+                },
+                {
+                    "conditions": {
+                        "exists": [
+                            "agent1",
+                            "agent2",
+                            "agent3"
+                        ]
+                    },
+                    "actions": {
+                        "agent1": {
+                            "chart": {
+                                "load": false
+                            },
+                            "view": {
+                                "load": false,
+                                "volume": 1
+                            },
+                            "map": {
+                                "load": true
+                            }
+                        },
+                        "agent2":{
+                            "chart": {
+                                "load": true
+                            },
+                            "view": {
+                                "load": false
+                            },
+                            "map": {
+                                "load": false
+                            }
+                        },
+                        "agent3":{
+                            "chart": {
+                                "load": false
+                            },
+                            "view": {
+                                "load": true
+                            },
+                            "map": {
+                                "load": false
+                            }
+                        }                        
+                    }
+                }                
+            ]
+        }
+    },
+    "implicitRules": {
+        "bestfit": {
+            "name": "bestfit",
+            "enabled": false,
+            "capabilities": ["screenSize", "deviceType"],
+            "priority": 3,
+            "behaviour": [
+                {
+                    "componentId": "video1",
+                    "required": true,
+                    "bestfit": "biggestScreenSize"
+                },
+                {
+                    "componentId": "video2",
+                    "required": false,
+                    "bestfit": "biggestScreenSize"
+                },
+                {
+                    "componentId": "video3",
+                    "required": false,
+                    "bestfit": "biggestScreenSize"
+                },
+                {
+                    "componentId": "twitter",
+                    "required": false,
+                    "bestfit": "touchable"
+                }
+            ]
+        },
+        "affinitymatch": {
+            "name": "affinitymatch",
+            "enabled": false,			
+            "priority": 4,
+            "capabilities": ["platform","onLine"],
+            "behaviour": [
+                {
+                    "componentId": "chart",
+                    "requirement": "platform(Win32)",
+                    "preference": "onLine(high, 2)"
+                },
+                {
+                    "componentId": "view",
+                    "requirement": "platform(linux)",
+                    "preference": "onLine(high, 1)"
+                },
+                {
+                    "componentId": "map",
+                    "requirement": "platform(android)",
+                    "preference": "onLine(high, 1)"
+                }
+            ]
+        }
+    },
+    "userPreferences": {
+        "name": "userpref",
+        "enabled": true,		
+        "priority": 1,
+        "capabilities": ["deviceType", "operation"],		
+        "behaviour": [
+            {
+                "componentId": "chart",
+                "movable": true,
+                "duplicable": true
+            },
+            {
+                "componentId": "view",
+                "movable": true,
+                "duplicable": true
+            },
+            {
+                "componentId": "map",
+                "movable": true,
+                "duplicable": true
+            }
+        ]
+    }
+}

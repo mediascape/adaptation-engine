@@ -1,0 +1,17 @@
+<html>
+
+<head>
+    <title>Index</title>
+</head>
+
+<body>
+<% if ( user) { %>
+  <% for(key in user) { %>
+    <% if(user.hasOwnProperty(key)) { %>
+      <div> <%= key %> : <%= JSON.stringify(user[key]) %></div>
+    <% } %>
+  <% } %>
+<% } %>
+    </body>
+
+</html>
