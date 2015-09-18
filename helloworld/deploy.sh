@@ -55,9 +55,9 @@ npm install
 ## install bower and google web components
 cd www/
 npm install bower
-bower install --save GoogleWebComponents/google-chart
-bower install --save GoogleWebComponents/google-map
-bower install --save GoogleWebComponents/google-streetview-pano
+bower install --save GoogleWebComponents/google-chart#0.2.1
+bower install --save GoogleWebComponents/google-map#0.4.2
+bower install --save GoogleWebComponents/google-streetview-pano#0.1.1
 cd ../
 
 
