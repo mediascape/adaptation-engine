@@ -11,7 +11,7 @@
                     "deviceType": "computer"
                 },
                 "agent2": {
-                    "deviceType": "tablet"
+                    "deviceType": "computer"
                 },
                 "agent3": {
                     "deviceType": "mobile"
