@@ -37,7 +37,7 @@ and how users can move or duplicate some web components from one device to anoth
 
 ### License
 
-Copyright 2015 NEC Laboractories Europe, Heidelberg, Germany.  
+Copyright 2015 NEC Laboratories Europe, Heidelberg, Germany.  
 
 under Licensed BSD 4-clause (see the "License" file)
 
